@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pairing Code</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kirim Pairing Code</h1>
+    <form action="/send-code" method="POST">
+      <input type="text" name="phone" placeholder="Nomor WhatsApp (contoh: 628xxx)" required><br>
+      <input type="number" name="count" placeholder="Jumlah Code" min="1" max="10" required><br>
+      <button type="submit">Kirim Code</button>
+    </form>
+  </div>
+</body>
+</html>
